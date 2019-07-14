@@ -35,5 +35,7 @@
   
   const playlist = { 'minhyuk': 'ongsimi' }
   const updatePlaylist = (playlist, artistName, songTitle) => {
-    return Object.assign({}, playlist, )
+    return Object.assign({}, playlist, { [artistName]: songTitle })
   }
+  
+  const removeFromPlaylist = (playlist, artisName) => delete playlist[artisName]
